@@ -1,0 +1,7 @@
+.page-body-form-key{
+  font-size:14px;
+  width:120px;
+}
+.page-body-form-value{
+  font-size:14px;
+}

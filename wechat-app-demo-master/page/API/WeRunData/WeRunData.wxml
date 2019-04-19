@@ -1,0 +1,7 @@
+<import src="../common/header.wxml"></import>
+<import src="../common/footer.wxml"></import>
+<view class="container">
+  <template is="header"></template>
+    <button type="default" bindtap="getRunData">getRunData</button>
+  <template is="footer"></template>
+</view>

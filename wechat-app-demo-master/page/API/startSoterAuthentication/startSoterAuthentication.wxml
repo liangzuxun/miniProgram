@@ -1,0 +1,49 @@
+<import src="../common/header.wxml"></import>
+<import src="../common/footer.wxml"></import>
+<view class="container">
+  <template is="header" data="{{title:'SoterAuthentication'}}"></template>
+  <view class="page-body">
+    <button type="default" bindtap="fingerPrint">指纹识别</button>
+    <view class="page-body-wrapper">
+      <view class="page-body-form">
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">123</text>
+          <input class="page-body-form-value" type="text" disabled="{{true}}" placeholder="未获取" value="{{resultJSON['cpu_id']}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">传入的challenge/raw</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON.raw}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">生物信息编号fid</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON.fid}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">防重特征参数counter</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON.counter}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">TEE名称:tee_n</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON['tee_n']}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">TEE版本号:tee_v</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON['tee_v']}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">指纹及相关模块版本号fp_n</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON.challenge}}" />
+        </view>
+        <view class="page-body-form-item">
+          <text class="page-body-form-key">指纹提供商fp_n</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON['fp_n']}}" />
+        </view>
+         <view class="page-body-form-item">
+          <text class="page-body-form-key">应用程序编号uid</text>
+          <input class="page-body-form-value" disabled="{{true}}" placeholder="未获取" value="{{resultJSON.uid}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <template is="footer"></template>
+</view>
